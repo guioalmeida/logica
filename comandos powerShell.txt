@@ -1,0 +1,68 @@
+Comandos
+
+cp -r /etc/* dirteste    - copia todo conteudo do etc para o diretorio a ser criado
+mkdir dirteste2
+cp /etc/* dirteste2    - copia somente os arquivos do etc ignorando os sub-diretórios
+
+
+mkdir -p
+cria diretórios e sub-diretórios
+
+rmdir
+Apagar diretório
+
+rm -r
+Apagar diretório e sub-diretórios
+
+wc - conta quantidade de linhas palavras e caracteres
+
+grep - pesquisa dentro do arquivo
+-i - procurar maiusculo e minusculo
+-v - inverte a busca
+-r recursiva
+-l ignora o conteúdo mostrando somente o nome do arquivo e
+-n mostra numero da linha
+
+
+cp - copiar arquivos ou pasta
+-r copia de forma recursiva
+
+ps (manipulacao de processos)
+-a todos os processo do usuario atual
+-au todos os processo de todos usuarios
+-aux todos os processos que estao rodando e que nao estao em nenhum tty
+-auxf processos em arvore
+
+kill
+usado para enviar sinais para um processo.
+sighup-1   inicio
+sigint-2   interrompe CTRZ+Z
+sigquit-3  sair
+sigkill-9  matar
+sigterm-15 sair pelo teclado CTRL+C
+
+
+kill -9 PID - matar processo
+
+tail -f -visualizar modificações em tempo real
+
+
+Metacaracteres
+? - substitui qualquer caracter em uma 1 unidade
+> outro1 outro2 outro3
+ls outro?
+
+* - tudo
+
+ls o*
+
+{, ,} - sequencia
+
+[ - ] - intervalo
+
+pega o conteudo de arq7 e joga em arq8
+cat arq7 > arq8
+
+
+tac - exibe o conteudo do arquivo da ultima linha ate a primeira
+tac nome_do_arquivo
